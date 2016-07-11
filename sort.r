@@ -2,7 +2,7 @@
 backup1 <- kyc_cluster_list
 for( l in 1:length(kyc_cluster_list))
 {
-  kyc_cluster_list[[l]] <- kyc_cluster_list[[l]][order(kyc_cluster_list[[l]]$fromAccountNo),]
+  kyc_cluster_list[[l]] <- kyc_cluster_list[[l]][order(kyc_cluster_list[[l]]$primaryAccountNumber),]
 }
 
 backup2 <- tran_cluster_list_agg
