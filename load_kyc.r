@@ -1,1 +1,1 @@
-kyc <- read.csv("J:/R/AML_4/Data/CustomerDetails.csv")
+kyc <- read.csv("E:/R/AML_4/Data/CustomerDetails.csv")
