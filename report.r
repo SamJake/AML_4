@@ -1,0 +1,7 @@
+write.csv(alerts,"E:/R/AML_4/Outputs/alerts.csv")
+write.csv(kyc_cluster_list[[3]],"E:/R/AML_4/Outputs/kyc_cluster3.csv")
+write.csv(kyc_cluster_list[[2]],"E:/R/AML_4/Outputs/kyc_cluster2.csv")
+write.csv(kyc_cluster_list[[1]],"E:/R/AML_4/Outputs/kyc_cluster1.csv")
+write.csv(tran_cluster_list[[3]],"E:/R/AML_4/Outputs/tran_cluster3.csv")
+write.csv(tran_cluster_list[[2]],"E:/R/AML_4/Outputs/tran_cluster2.csv")
+write.csv(tran_cluster_list[[1]],"E:/R/AML_4/Outputs/tran_cluster1.csv")
