@@ -1,8 +1,15 @@
-dt <- "16-Apr-16"
+dt <- read.csv("E:/R/AML_4/Data/date.csv")
+dt <- dt[1,1]
 stat <- "Cancelled"
-query1 <- paste0("select * from file where date = '",dt,"' and status != '", stat,"'")
-query2 <- paste0("select * from file where status != '", stat,"'")
-#tran <- read.csv.sql("E:/R/AML_4/Data/transactionDetails.csv",sql = query1)
-tran <- read.csv.sql("E:/R/AML_4/Data/transactionDetails.csv",sql = query2)
+if(dt == "ALL")
+{
+  query <- paste0("select * from file where status != '", stat,"'")
+  print(query)
+}else
+{
+  query <- paste0("select * from file where date = '",dt,"' and status != '", stat,"'")
+  print(query)
+}
+tran <- read.csv.sql("E:/R/AML_4/Data/transactionDetails.csv",sql = query)
 tran$date <- as.Date(tran$date,format="%d-%B-%y")
 
